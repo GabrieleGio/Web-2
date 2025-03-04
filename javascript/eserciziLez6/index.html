@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Controlla la Lampadina</title>
+    <script src="esercizio1.js"></script>
+    <style>
+        body {
+            background-color: #f4f7fb;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 400px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #cccccc;
+            border-radius: 8px;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 1.1em;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .lampadina-bottone {
+            background-color: #f0f0f0;
+            border: none;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .lampadina-bottone:hover {
+            background-color: #e0e0e0;
+        }
+
+        #immagineLampadina {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        #immagineLampadina:hover {
+            transform: scale(1.1);
+        }
+
+        #statoLampadina {
+            font-size: 1.2em;
+            color: #555555;
+            margin-top: 20px;
+        }
+
+        .rotta {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Imposta il numero massimo di clic per la lampadina</h2>
+
+        <input type="number" id="maxClicks" placeholder="Numero di clic" min="1">
+        <button onclick="setMaxClicks()">Imposta Clic Massimi</button>
+
+        <br><br>
+
+        <button class="lampadina-bottone" id="lampadinaBottone" disabled onclick="lampadina.click()">
+            <img id="immagineLampadina" src="https://www.lucidinatale.com/media/catalog/product/cache/3b308f51c854b13eae1233abff59b24f/5/6/56077-lampada-vetro-party-light-bianco-freddo-1.jpg" alt="Lampadina">
+        </button>
+        <p id="statoLampadina">Lo stato attuale è: spenta </p>
+    </div>
+</body>
+</html>
