@@ -1,0 +1,28 @@
+REACT
+
+libreria JS ... app SPA (Single Page Application) 1 sola pagina HTML
+
+1 sola pagina HTML ... N componenti (blocco html ... div ... h1)
+
+NODE.JS ... Sw elaborare JS lato server
+BROWSER ... Sw elaborare JS lato client
+
+REACT ... JS Nativo ... Estensioni di JS ... Compilato ... Node.JS
+
+Node.js 30 MB ... 3000 funzioni ... SW (software) Aperto
+Browser 200 MB ... 3 funzioni ... SW (software) Chiuso
+
+COMANDI PRINCIPALI DI NODE
+
+npm ... Node Package Manager ... gestisco le librerie
+
+npx ... Node Package eXecute ... esegue un pacchetto
+
+npx create-react-app
+
+node_modules -> cartella dove node mette tutte le librerie
+
+conviene installare l'estensione ES7 React per VS Code
+comando 'rafce' per creare un componente vuoto
+
+ogni componente nuovo DEVE avere l'iniziale maiuscola
